@@ -1,5 +1,8 @@
 # Violence-detection-system
 
+Collab notebook:
+https://colab.research.google.com/drive/16fzgf748CsooNMo6-z4rt6ULjSdyDZet?usp=sharing
+
 ideas till now:
 https://www.kaggle.com/code/abduulrahmankhalid/real-time-violence-detection-mobilenet-bi-lstm
 
