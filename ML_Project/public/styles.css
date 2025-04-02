@@ -1,0 +1,88 @@
+body{
+    background-color:#dfc5fe;
+}
+
+form{
+    width:100%;
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    margin-top:120px;
+}
+
+input{
+    height:20px;
+    width:450px;
+    border: 1px solid white;
+    border-radius:10px;
+    padding:10px;
+    outline: none;
+}
+
+#upload{
+    height:40px;
+    width:80px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius:5px;
+    color:blueviolet;
+    padding:8px;
+    margin:0px 0px 0px 30px;
+}
+
+.videoes{
+    height:200px;
+    width:900px;
+    display: flex;
+    margin:50px auto ;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.vdo{
+    height:180px;
+    width:260px;
+    border-radius:3%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#one{
+    background-image: url('./video-images/1.png');
+    background-size: cover; 
+}
+
+#second{
+    background-image: url('./video-images/2.png');
+    background-size: cover; 
+}
+
+#third{
+    background-image: url('./video-images/3.png');
+    background-size: cover; 
+}
+
+
+#video-upload{
+    background-color: white;
+    border:none;
+    color:#8D5EB7;
+    height:25px;
+    border-radius:50%;
+    margin-top:auto;
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+    cursor: pointer;
+    opacity:0;
+}
+
+.vdo:hover #video-upload{
+    opacity: 1; 
+}
+
+.vdo:hover{
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.3s;
+}
