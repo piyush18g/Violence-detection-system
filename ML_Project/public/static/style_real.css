@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #111; /* Dark background */
+    color: white;
+    padding: 0;
+    background-image: url(./video-images/ty.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.body2{
+    background-color: #161414CC;
+    margin: 50px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.major-mono-display-regular {
+    font-family: "Major Mono Display", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.open-sans-200 {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+.up_bar{
+    background-color: #161414;
+    height: 60vh;
+    width:100%;
+    display: flex;
+    justify-content: centre;
+    align-items: center;
+    text-align: center;
+}
+
+form{
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+button {
+    font-size: 1rem;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background: none;
+    color: #d3c7b5;
+    border: 1px solid orange;
+    height: 40px;
+    width: 150px;
+    opacity: 0.8;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+
+}
+
+button:hover {
+    border: 2px solid purple;
+    font-size: 1.1rem;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.video_viewport{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.video_viewport h3{
+    font-family: "Major Mono Display", monospace;
+    font-weight: 400;
+    font-style: normal;
+    padding-bottom: 10px;
+}
+
+#video_stream{
+    border: 2px solid orangered;
+}

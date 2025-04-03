@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Violence Detection</title>
+    <link rel="icon" href="{{ url_for('static', filename='icon/ringing.png') }}" type="image/png">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style_video.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=chevron_right" /></head>
+
+<body>
+</head>
+
+<body>
+    <div class="main">
+        <div class="up_bar">
+            <form  class="form_up" action="/final_result" method="post" enctype="multipart/form-data">
+                <input type="file" name="video" id="videoInput" accept="video/*">
+                <button type="submit" value="submit">Upload</button>
+            </form>
+            <div class="result-container {% if prediction == 'Violent' %} prediction-violent-result 
+            {% elif prediction == 'Non-violent' %} prediction-non-violent-result 
+            {% else %} prediction-hide {% endif %}">
+                <h3>Video Classification Result</h3>
+                <p>
+                Prediction: 
+                <span class="{{ 'prediction-violent' if prediction == 'Violent' else 'prediction-non-violent' }}">
+                    {{ prediction }}
+                </span>
+                </p>
+                <p>Probability: {{confidence}}%</p>
+            </div>
+            <form class="back_but" action="/" method="get" enctype="multipart/form-data">
+                <button type="submit" value="submit">Back</button>
+            </form>
+        </div>
+        <div class="down_bar">
+            <h1>Rapid Response</h1>
+            <h6>Upload, Detect and Protect</h6>
+        </div>
+    </div>
+
+    <!--<script src="{{ url_for('static', filename='client.js') }}"></script>-->
+</body>
+
+</html>
